@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube ad skipper",
+  "description": "Skips youtube ads by clicking the ad info and stop seeing this ad, also the skip ad if it is there",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://youtube.com/*",
+        "https://www.youtube.com/*"
+      ]
+    }
+  ]
+}
